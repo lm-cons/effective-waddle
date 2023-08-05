@@ -1,0 +1,341 @@
+/*
+-----------------------------------------------------------------------------------------
+CSS document: ImageCaf� Template Styles
+Created: 02/11/2007
+Last Modified: 03/12/2007
+NOTE: Template styles included here cannot be changed by the customer
+-------------------------------------------------------------------------------------- */
+* {margin:0;padding:0;}  /* zero out everything: you may not want to use this as it removes
+                         ALL default browser styles */
+body {
+	background: #ffffff;
+}
+/*
+-----------------------------------------------------------------------------------------
+Global
+-------------------------------------------------------------------------------------- */
+div {position:relative;}
+h1, h2, h3, h4, h5, h6 {margin:10px;}
+h1#website-title {margin:0;}
+h2#website-slogan {margin:0;}
+#navcontainer div h3 {margin:0;}
+ul, ol {
+	margin:10px;
+	padding:0 0 0 20px;
+}
+ol {padding:0 0 0 30px;}
+blockquote {margin:10px 10px 10px 40px;}
+.clearer {clear:both;}
+/*
+-----------------------------------------------------------------------------------------
+General Layout Structure
+-------------------------------------------------------------------------------------- */
+#side-png-layout {
+	margin:auto;	
+	width:100%;
+}
+* html #printwrap { 
+	position:absolute; 
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
+
+#printwrapsub {
+	position: absolute;
+	left: 0px;
+	width: 100%;
+	bottom: 0;
+}
+
+
+div[id] #printwrap {height:auto;}
+#center-page-container {
+	width:752px;
+	margin:auto;
+	z-index:1000;
+	background-color:#FFFFFF;
+}
+#headertop {
+	float:left;
+	background-image:none;
+	width:752px;
+	margin-bottom: 5px;
+}
+	#headertop .accent {
+		height:136px;
+		width:170px;
+		float:left;
+	}
+		#headertop .accent #accent-mask {
+			height:136px;
+			width:170px;
+			background-image:url(../images/accent-mask.gif);
+			background-repeat:no-repeat;
+		}
+#headertop #header-top-right {
+	height:85px;
+	width:532px;
+	padding:51px 50px 0 0;
+	float:left;
+	text-align:right;
+	background-image:url(../images/header-overlay-alt.png);
+	background-repeat:no-repeat;
+	background-position:top right;
+}
+* html #headertop #header-top-right {
+    background-image:none;
+ }
+#headertop.accent-none #header-top-right {
+	margin-left:2px;
+	width:700px;
+}
+#headertop.accent-none .accent-none {display:none;}		
+#headertop #header-top-right #header-end {
+	position:absolute;
+	top:0;
+	left:0;
+	width:9px;
+	height:136px;
+	background-image:url(../images/header-overlay-end.gif);
+	background-repeat:no-repeat;
+}
+#nav-top {
+	float:left;
+	width:741px;
+	z-index:1000;
+	margin-left: 6px;
+	margin-right: 5px;
+	background-image:url(../images/nav-button-overlay.png);
+	background-repeat:repeat-x;
+	font-size: 1px;
+}
+* html #nav-top {
+	margin-left: 3px;
+	margin-right: 0px;
+}
+#nav-top #navcontainer {
+	float:left;
+	width:741px;
+	z-index:1000;
+}
+#content {
+	float:left;
+	width:650px;
+	padding:25px 20px 100px 45px;
+}
+#footer{
+	height:55px;
+	width:752px;
+	background-image: url(../images/footer.jpg);
+	background-repeat:no-repeat;
+	background-color:#FFFFFF;
+}
+
+/*
+-----------------------------------------------------------------------------------------
+=#NAV-TOP
+-------------------------------------------------------------------------------------- */
+/*--- REQUIRED CSS FOR FLYOUT MENU ---*/
+#nav-top #navcontainer {z-index:1000;}
+#nav-top #navcontainer #nav-wrapper {
+	width:713px;
+	position:static;
+	background-image:url(../images/nav-button-overlay.png);
+	background-repeat:repeat-x;
+	z-index:1002;
+}
+* html #nav-top #navcontainer #nav-wrapper {
+	background-image:url(../images/ie-png-replace.gif);
+	background-repeat:repeat-x;
+}
+#nav-left #navcontainer #nav-wrapper div {
+	background-image: url(../images/nav-divider.png);
+	background-repeat:no-repeat;
+}
+#nav-top #navcontainer div, 
+#nav-top #navcontainer div h3 {
+  float:left;
+  display:block;
+  cursor:pointer;
+}
+
+
+#navcontainer #nav-wrapper div a h3{
+	background-image: url(../images/nav-divider.png);
+	background-repeat:no-repeat;
+}
+#navcontainer #nav-wrapper div div.submenu a h3{
+	background-image: none;
+	filter:none;
+}
+#navcontainer #nav-wrapper div:first-child a h3{
+	background-image: none;
+}
+
+  #nav-top #navcontainer div a h3{
+  	height:27px;
+	padding:10px 18px 0 18px;
+	}
+  #nav-top #navcontainer div div.submenu a h3{
+  	height:10px;
+	padding:12px;
+  }
+  #nav-top #navcontainer div a:link, 
+  #nav-top #navcontainer div a:active, 
+  #nav-top #navcontainer div a:visited {
+    float:left;
+    padding:0;
+    text-decoration:none;
+  }
+  #nav-top #navcontainer div a:hover {padding-top:0;}
+  #nav-top #navcontainer div div.submenu {
+    position:absolute;
+    top:0;
+    left:0;
+    visibility: hidden;
+    width:176px;
+	z-index:1000;
+  }
+    #nav-top #navcontainer div div.submenu div {
+      margin:0;
+	  border:1px solid #FFFFFF;
+	  display:block;
+	  top:-1px;
+    }
+	#nav-top #navcontainer #nav-wrapper div div.submenu div, 
+	#nav-top #navcontainer #nav-wrapper div div.submenu div h3 {
+		display:block;
+		float:left;
+	}
+    #nav-top #navcontainer div div.submenu a:link, 
+    #nav-top #navcontainer div div.submenu a:active, 
+    #nav-top #navcontainer div div.submenu a:visited {
+      float:left;
+      width:180px;
+      border-right:0;
+	  background-image:none;
+	  background-image:none;
+	  filter:none;
+    }
+    #nav-top #navcontainer div div.submenu a:hover {
+	  text-decoration:underline;
+    }
+/*--- PNG IMAGES ---*/
+#header-top-right {
+  background-image:url(../images/header-overlay-alt.png);
+  background-repeat:no-repeat;
+  background-position:top right;
+}
+#navcontainer #nav-wrapper div a {
+	background-image:url(../images/nav-button-overlay.png);
+	background-repeat:repeat-x;
+}
+
+#nav-topleft {
+  width: 14px; height: 14px;
+��padding: 0px;
+  border: 0px;
+  font-size: 1px;
+��z-index: 99;
+  float: left;
+  clear: both;
+  margin: 0px 0px 0px 0px;
+  background-image:url(../images/navcrnr_ul.png);
+  background-repeat:no-repeat;
+  background-position:top left;
+}
+#nav-topright {
+  width:14px;
+  height:14px;
+  padding: 0px;
+  border: 0px;
+  font-size: 1px;��
+  z-index: 99;
+  float: right;
+  clear: right;
+  margin: 0px 0px 0px 0px;
+  background-image:url(../images/navcrnr_ur.png);
+  background-repeat:no-repeat;
+  background-position:top right;
+}
+* html #nav-topright {
+  background-image:url(../images/navcrnr_ur.gif);
+  background-repeat:no-repeat;
+  background-position:top right;
+}
+#nav-botleft {
+  position: absolute;
+  bottom:0px; 
+  left:0;
+  width:14px;
+  height:14px;
+  padding: 0px;
+  border: 0px;
+��font-size: 1px;
+  z-index: 2099;
+  float: left;
+  /*clear: both;*/
+  margin: 0px 0px 0px 0px;
+  background-image:url(../images/navcrnr_ll.png);
+  background-repeat:no-repeat;
+  background-position:top left;
+}
+* html #nav-botleft {
+	  bottom:-1px;
+}
+
+#nav-botright {
+  position: absolute;
+  bottom:0px; 
+  right:0px;
+  width:14px;
+  height:14px;
+  padding: 0px;
+  border: 0px;
+  font-size: 1px;
+��z-index: 2199;
+  float: right;
+  /*clear: right;*/
+  margin: 0px 0px 0px 0px;
+  background-image:url(../images/navcrnr_lr.png);
+  background-repeat:no-repeat;
+  background-position:top right;
+}
+* html #nav-botright {
+	bottom:-1px; 
+    right:-1px;
+}
+
+/*
+-----------------------------------------------------------------------------------------
+=#NAV-LEFT
+-------------------------------------------------------------------------------------- */
+/*------------------ Does Not Apply to This Layout ------------------*/	
+
+/*
+-----------------------------------------------------------------------------------------
+=#NAV-RIGHT
+-------------------------------------------------------------------------------------- */
+/*------------------ Does Not Apply to This Layout ------------------*/	
+
+
+/*
+-----------------------------------------------------------------------------------------
+WIDE LAYOUT STYLES
+-------------------------------------------------------------------------------------- */
+body#wide #center-page-container {width:952px;}
+body#wide #headertop {width:952px;}
+	body#wide #headertop #header-top-right {width:732px;}
+	body#wide #headertop.accent-none #header-top-right {width:900px;}
+body#wide #nav-top {width:941px;}
+body#wide #nav-top #navcontainer {width:941px;}
+body#wide #nav-top #navcontainer #nav-wrapper {width:913px;}
+body#wide #content {width:850px;}
+body#wide #footer{
+	width:952px;
+	background-image: url(../images/footer-wide.jpg);
+	background-repeat:no-repeat;
+}
+

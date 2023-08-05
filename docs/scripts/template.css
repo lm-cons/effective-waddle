@@ -1,0 +1,294 @@
+/*
+**  Template.css
+**
+**	Default Layout
+**
+*/
+
+* {
+	padding: 0;
+	margin: 0;
+}
+html, body {
+	height: 100%
+}
+#wb-container-outer {
+	min-width:960px;
+	min-height:100%;
+	height:auto !important;
+	background-color:#e2e2e2;
+		background-image:url(../images/layout1/lr_bgd.png);
+	background-position: top left;
+	background-repeat: repeat;
+	
+}
+#wb-container-inner {
+	margin: auto;
+}
+
+#wb-layout {
+	margin:auto;
+}
+#wb-layout-inner {
+}
+/* WB-LAYOUT-TOP-2: for designs that have navigation between the header and content
+**  Layout 7
+*/
+	#wb-layout-top-header, #wb-header-nav {
+	display: none;
+}
+/* WB-LAYOUT-HEADER: This is the header section *//*overflow:hidden*/
+
+ #wb-layout-header-logo-master-wrapper {
+	height:102px;
+	width:100%;
+			background-image:url(../images/layout1/lr_logobg.png);
+	background-position: top center;
+	background-repeat: no-repeat;
+	margin: auto;
+
+}
+#wb-layout-header-logo-container {
+	width:960px;
+	margin: auto;
+	overflow:hidden;
+		padding-top:14px;
+	height:88px;
+
+}
+#wb-layout-header-logo-wrapper {
+	height:102px;
+	width:960px;
+	margin: auto;
+
+}
+#wb-layout-header-logo {
+	height:102px;
+	float:left;
+	width:50%;
+}
+#wb-layout-header-contact {
+	height:102px;
+	width:50%;
+	float:right;
+}
+#wb-layout-header-master-wrapper{
+	margin: auto;
+	height:320px;
+	background-image:url(../images/layout1/lr_hw.png);
+	background-position: top center;
+	background-repeat: no-repeat
+
+	}
+#wb-layout-header-container {
+	width:960px;
+	margin:auto;
+
+
+}
+#wb-layout-top-header-wrapper {
+}
+#wb-layout-header {
+	width:960px;
+	margin: auto;
+	height:308px;
+	background-image:url(../images/layout1/lr_h.png);
+	background-position: top left;
+	background-repeat: no-repeat;
+}
+#wb-layout-header-mask {
+	overflow:hidden;
+	width:960px;
+	margin: auto;
+	height:308px;
+	background-image:url(../images/layout1/lr_hm.png);
+	background-position: top left;
+	background-repeat: no-repeat;
+
+
+	
+}
+#wb-layout-header-base-master-wrapper {
+	height:13px;
+	width:960px;
+	margin:0 auto;
+				background-image:url(../images/layout1/lr_hb.png);
+	background-position: bottom center;
+	background-repeat: repeat-x;
+
+
+}
+/* WB-LAYOUT-TOP-2: for designs that have navigation between the header and content
+**  Layout 3
+*/
+
+    #wb-navigation-subtop {
+	display: none;
+}
+#wb-top-subbasenav {
+}
+#wb-layout-uppertop-header-wrapper {
+	display: none;
+}
+/* WB-CONTAINER-CONTENTWRAPPER: This wraps the content area of the site
+**
+**	ALL Layouts
+**
+*/
+
+	#wb-container-contentwrapper-master-wrapper {
+	width:100%;
+	float:left;
+}
+#wb-container-contentwrapper-wrapper {
+	margin: auto;
+			background-image:url(../images/layout1/lr_cw.png);
+	background-position: top center;
+	background-repeat: repeat-y;
+
+}
+#wb-container-contentwrapper {
+	width:960px;
+	margin: auto;
+	height: 100%;
+	background-color:#FFF;
+
+
+
+	
+}
+/* SIDEBAR is for designs that have a left or right column built in
+**
+**	Layout 1
+**	Layout 2
+*/
+	#wb-layout-sidebar {
+	float: left;
+	width: 200px;
+	padding-top:20px;
+	
+	
+}
+/* sidebar navigation */
+	#wb-navigation {
+		
+
+
+}
+#wb-navigation-top {
+
+}
+#wb-basenav {
+}
+#wb-navbasewrap {
+
+	
+}
+/* SIDEBAR NAVIGATION STRUCTURE
+**
+**	Layout 1
+**	Layout 2
+**
+*/
+	#wb-navigation-bottom {
+	/* NO HEIGHT: 100%.  BREAKS FF. */
+
+	}
+	
+		#wb-navigation-bottom div {
+
+		}
+		#wb-navigation-bottom div a h3{
+			padding: 12px 4px 12px 25px;
+			width: 180px;
+			position:relative;
+			left:-20px;
+			cursor:hand;
+			background-image:url(../images/layout1/lr_menubg.png);
+		background-position: top left;
+		background-repeat: repeat-y;
+			border-bottom:1px solid #628ab0;
+			border-left:1px solid #999;
+			border-right:1px solid #999;
+			border-top:1px solid #999;
+
+
+
+		}
+		* html 	#wb-navigation-bottom div a h3{
+			left:0px;
+		}
+		
+				#wb-navigation-bottom div a h3:hover{
+			background-image:url(../images/layout1/lr_menubgh.png);
+					background-position: bottom left;
+		background-repeat: repeat-x;
+		background-color:#FFF
+			
+		}
+		
+			#wb-navigation-bottom div.submenu {
+				padding: 0px;
+				margin:0;
+				background-color:transparent;
+			}
+				#wb-navigation-bottom div.submenu div {
+					margin:0
+				}
+					#wb-navigation-bottom div.submenu div a h3{
+						margin:0
+					}
+			#wb-navigation-bottom div a h3{
+                                               cursor:hand;
+                               }
+/* MAIN-CONTENT AREA
+**
+**	ALL Layouts
+**
+*/
+	#wb-layout-main {
+	width:760px;
+	float: right;
+		
+
+}
+#wb-layout-main-inner-1 {
+}
+#wb-layout-main-inner-2 {
+	padding-top:20px;
+}
+/* Page FOOTER
+**
+**	ALL Layouts
+**
+*/
+
+#wb-layout-footer-master-wrapper-top {
+	display:none;
+}
+#wb-layout-footer-master-wrapper {
+	clear:both;
+	width:100%;
+}
+#wb-layout-footer-wrapper {
+	
+
+}
+#wb-layout-footer {
+	width:960px;
+	min-height:102px;
+	height: auto !important;
+	clear:both;
+	margin: auto;
+					background-image:url(../images/layout1/lr_f.png);
+	background-position: top center;
+	background-repeat: no-repeat;
+
+}
+#wb-layout-footer-inner-1 {
+}
+/* submenu defaults */
+div.submenu {
+	display: none;
+	background-color:#6292c0;
+}
